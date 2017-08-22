@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="txtCounter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="669.0" stylesheets="@newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sudokuu.FXMLDocumentController">
+   <children>
+      <GridPane layoutX="135.0" prefHeight="168.0" prefWidth="176.0" style="-fx-border-color: black; -fx-border-style: solid;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXTextField fx:id="txt0" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt9" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt1" focusColor="#2ef506" onAction="#setColor" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt10" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt18" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt19" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt2" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt11" alignment="CENTER" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt20" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="311.0" prefHeight="168.0" prefWidth="176.0" style="-fx-border-color: black; -fx-border-style: solid;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="txt3" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt12" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt4" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt13" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt21" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt22" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt5" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt14" alignment="CENTER" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt23" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="487.0" prefHeight="168.0" prefWidth="176.0" style="-fx-border-color: black; -fx-border-style: solid;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="txt6" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt15" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt7" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt16" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt24" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt25" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt8" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt17" alignment="CENTER" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt26" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="135.0" layoutY="168.0" prefHeight="168.0" prefWidth="176.0" style="-fx-border-color: black; -fx-border-style: solid;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="txt27" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt36" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt28" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt37" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt45" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt46" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt29" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt38" alignment="CENTER" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt47" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="311.0" layoutY="168.0" prefHeight="168.0" prefWidth="176.0" style="-fx-border-color: black; -fx-border-style: solid;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="txt30" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txt39" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txt31" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txt40" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txt48" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txt49" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txt32" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txt41" alignment="CENTER" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txt50" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font></JFXTextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="487.0" layoutY="168.0" prefHeight="168.0" prefWidth="176.0" style="-fx-border-color: black; -fx-border-style: solid;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="txt33" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt42" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt34" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt43" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt51" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt52" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt35" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt44" alignment="CENTER" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt53" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="135.0" layoutY="336.0" prefHeight="168.0" prefWidth="176.0" style="-fx-border-color: black; -fx-border-style: solid;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="txt54" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt63" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt55" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt64" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt72" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt73" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt56" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt65" alignment="CENTER" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt74" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="311.0" layoutY="336.0" prefHeight="168.0" prefWidth="176.0" style="-fx-border-color: black; -fx-border-style: solid;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="txt57" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt66" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt58" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt67" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt75" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt76" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt59" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt68" alignment="CENTER" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt77" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="487.0" layoutY="336.0" prefHeight="168.0" prefWidth="176.0" style="-fx-border-color: black; -fx-border-style: solid;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="txt60" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt69" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt61" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt70" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt78" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt79" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt62" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt71" alignment="CENTER" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txt80" focusColor="#2ef506" prefHeight="161.0" prefWidth="186.0" style="-fx-border-color: black; -fx-border-style: dotted;" unFocusColor="#d00606" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" layoutX="6.0" layoutY="22.0" prefHeight="30.0" prefWidth="115.0" text="difficulty levels" textFill="#3f4086">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="12.0" layoutY="200.0" onAction="#NewGame" prefHeight="47.0" prefWidth="115.0" style="-fx-background-color: DarkMagenta;" text="New Game" textFill="#fafcfc" />
+      <JFXButton fx:id="btnHelp" buttonType="RAISED" layoutX="12.0" layoutY="254.0" onAction="#help" prefHeight="47.0" prefWidth="73.0" style="-fx-background-color: DarkMagenta;" text="Help" textFill="#fafcfc" />
+      <JFXRadioButton fx:id="radNormal" layoutX="6.0" layoutY="99.0" onAction="#NewGame" selected="true" text="Normal" textFill="#585861">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="radEasy" layoutX="6.0" layoutY="67.0" onAction="#NewGame" text="Easy" textFill="#585861">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="RadHard" layoutX="6.0" layoutY="129.0" onAction="#NewGame" text="Hard" textFill="#585861">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXTextField fx:id="txtCounter1" layoutX="85.0" layoutY="254.0" prefHeight="47.0" prefWidth="40.0" />
+   </children>
+</AnchorPane>

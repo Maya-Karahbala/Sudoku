@@ -1,0 +1,11 @@
+JFXTextField{
+-fx-alignment: center;
+font-size:xx-small;
+-fx-border-color: black;
+
+
+}
+
+.custom {
+  -fx-control-inner-background: orange;
+}
